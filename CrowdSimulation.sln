@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo", "Demo\Demo.vcxproj", "{62602147-7E8C-4B42-BD49-B9B4169A6821}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4894EA07-2937-4F89-839F-9639E644D5A8} = {4894EA07-2937-4F89-839F-9639E644D5A8}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61219D14-7008-43BD-AEE4-411EAAF1AF64}"
+	ProjectSection(SolutionItems) = preProject
+		Demo\demo.pro = Demo\demo.pro
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Libpedsim", "Libpedsim\Libpedsim.vcxproj", "{4894EA07-2937-4F89-839F-9639E644D5A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		timing-release|x64 = timing-release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.Debug|x64.ActiveCfg = Debug|x64
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.Debug|x64.Build.0 = Debug|x64
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.Release|x64.ActiveCfg = Release|x64
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.Release|x64.Build.0 = Release|x64
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.timing-release|x64.ActiveCfg = timing-release|x64
+		{62602147-7E8C-4B42-BD49-B9B4169A6821}.timing-release|x64.Build.0 = timing-release|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.Debug|x64.ActiveCfg = Debug|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.Debug|x64.Build.0 = Debug|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.Release|x64.ActiveCfg = Release|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.Release|x64.Build.0 = Release|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.timing-release|x64.ActiveCfg = timing-release|x64
+		{4894EA07-2937-4F89-839F-9639E644D5A8}.timing-release|x64.Build.0 = timing-release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BFE0A7C-A90D-4C1D-8D1C-29CAB90572FE}
+	EndGlobalSection
+EndGlobal

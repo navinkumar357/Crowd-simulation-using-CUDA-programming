@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="timing-release|x64">
+      <Configuration>timing-release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62602147-7E8C-4B42-BD49-B9B4169A6821}</ProjectGuid>
+    <RootNamespace>Demo</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v141</PlatformToolSet>
+    <OutputDirectory>release\Demo\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Demo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\Demo\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Demo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\Demo\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Demo</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\Demo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">timing-release\Demo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">timing-release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">Demo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\Demo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Demo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;</LibraryPath>
+    <ExtensionsToDeleteOnClean>*.dll;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;</LibraryPath>
+    <ExtensionsToDeleteOnClean>*.dll;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;</LibraryPath>
+    <ExtensionsToDeleteOnClean>*.dll;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\Libpedsim\src;C:\Qt\5.12.0\msvc2017_64\include;C:\Qt\5.12.0\msvc2017_64\include\QtOpenGL;C:\Qt\5.12.0\msvc2017_64\include\QtWidgets;C:\Qt\5.12.0\msvc2017_64\include\QtGui;C:\Qt\5.12.0\5.12.0\msvc2017_64\include\QtANGLE;C:\Qt\5.12.0\msvc2017_64\include\QtCore;C:\Qt\5.12.0\msvc2017_64\mkspecs\win32-msvc;release;C:\Qt\5.12.0\msvc2017_64\mkspecs\win32-msvc2017;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libpedsim.lib;;C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64\cudart.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Platform)\$(Configuration);C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64;C:\Qt\5.12.0\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Demo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\Libpedsim\src;C:\Qt\5.12.0\msvc2017_64\include;C:\Qt\5.12.0\msvc2017_64\include\QtOpenGL;C:\Qt\5.12.0\msvc2017_64\include\QtWidgets;C:\Qt\5.12.0\msvc2017_64\include\QtGui;C:\Qt\5.12.0\5.12.0\msvc2017_64\include\QtANGLE;C:\Qt\5.12.0\msvc2017_64\include\QtCore;C:\Qt\5.12.0\msvc2017_64\mkspecs\win32-msvc;release;C:\Qt\5.12.0\msvc2017_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libpedsim.lib;;C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64\cudart.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Platform)\$(Configuration);C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64;C:\Qt\5.12.0\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\Demo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\Libpedsim\src;C:\Qt\5.12.0\msvc2017_64\include;C:\Qt\5.12.0\msvc2017_64\include\QtOpenGL;C:\Qt\5.12.0\msvc2017_64\include\QtWidgets;C:\Qt\5.12.0\msvc2017_64\include\QtGui;C:\Qt\5.12.0\5.12.0\msvc2017_64\include\QtANGLE;C:\Qt\5.12.0\msvc2017_64\include\QtCore;C:\Qt\5.12.0\msvc2017_64\mkspecs\win32-msvc;debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libpedsim.lib;;C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64\cudart.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5OpenGLd.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\5.12.0\msvc2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\$(Platform)\$(Configuration);C:\Progra~1\NVIDIA~2\CUDA\v9.2\lib\x64;C:\Qt\5.12.0\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Demo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;NOMINMAX;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="src\ParseScenario.cpp" />
+    <ClCompile Include="src\PedSimulation.cpp" />
+    <ClCompile Include="src\ViewAgent.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\MainWindow.h" />
+    <CustomBuild Include="src\ParseScenario.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">src\ParseScenario.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">src\ParseScenario.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2017 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0/msvc2017_64/include/QtCore src\ParseScenario.h -o release\moc_ParseScenario.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2017 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0msvc2017_64/include/QtCore src\ParseScenario.h -o release\moc_ParseScenario.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC src/ParseScenario.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">MOC src/ParseScenario.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_ParseScenario.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">release\moc_ParseScenario.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">src\ParseScenario.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2013 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0/msvc2017_64/include/QtCore src\ParseScenario.h -o debug\moc_ParseScenario.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC src/ParseScenario.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_ParseScenario.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\PedSimulation.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">src\PedSimulation.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">src\PedSimulation.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2013 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0/msvc2017_64/include/QtCore src\PedSimulation.h -o release\moc_PedSimulation.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2013 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0/msvc2017_64/include/QtCore src\PedSimulation.h -o release\moc_PedSimulation.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC src/PedSimulation.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">MOC src/PedSimulation.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_PedSimulation.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">release\moc_PedSimulation.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">src\PedSimulation.h;C:\Qt\5.12.0\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\5.12.0\msvc2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DNOMINMAX -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/5.12.0/msvc2017_64/mkspecs/win32-msvc2013 -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Demo -IX:/CrowdSimulation/Libpedsim/src -IC:/Qt/5.12.0/msvc2017_64/include -IC:/Qt/5.12.0/msvc2017_64/include/QtOpenGL -IC:/Qt/5.12.0/msvc2017_64/include/QtWidgets -IC:/Qt/5.12.0/msvc2017_64/include/QtGui -IC:/Qt/5.12.0/msvc2017_64/include/QtANGLE -IC:/Qt/5.12.0/msvc2017_64/include/QtCore src\PedSimulation.h -o debug\moc_PedSimulation.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC src/PedSimulation.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_PedSimulation.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="src\ViewAgent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_ParseScenario.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ParseScenario.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_PedSimulation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='timing-release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_PedSimulation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="scenario.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
